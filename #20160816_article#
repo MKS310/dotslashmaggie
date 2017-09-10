@@ -1,0 +1,65 @@
+An analysis of this paper: https://www.researchgate.net/profile/Chandrakant_Belavi/publication/301589586_Review_Analysis_of_iPhone6_Using_Twitter_Data/links/571b48f208ae6eb94d0d567c.pdf
+
+Found on Google Scholar
+
+
+Introduction: 
+>Just imagine how useful it is for a manufacturer or vender to get product review without actuallly surveying customers directly.
+
+##find a reference that demonstrates the bias that a direct survey of customers causes
+
+Sentiment analysis of social media: how valuable is this resource?
+how much value can you gain? how reliable? advantages?
+
+Challenges of Sentiment Analysis:
+-Not Trivial.
+-Depends on the reliability of the algorithms
+
+Previous Research:
+**"Twitter Data Analysis" (Guarish Chaudhari): discusses challenges in Twitter data analysis (http://www.columbia.edu/~va2297/wsdm14.pdf)
+     -"A recent problem is predicting a user location starting from a small 1-2% known locations obtained from users who allow geotagging thei tweets."
+     -"A problem of recent interest is to predict the mising sttributed of other users based on known attributes of their friends"
+     -"For most users there is not enough signal to infer their labels...almost hald of the predicted locations are wrong."
+**"Text Mining for Sentiment Analysis of Twitter Data" (Wakade, Shekar, Liszka, Chan): Discuss Weka data mining tool for extracting useful info for sentiment analysis from twitter
+***"Mining Sentiments from Tweets" (Bakliwal, Arora, Madhappan, Kapre, Singh, Varma): Propose a technique which performs the task of sentiment identification using corpus of predefined tweets
+*"Sentiment Analysis of Twitter Data" (Agarwal, Xie, Vovsha, Rambow, Passoneau): Two sentiment analysis approaches: Part of Speech specific prior polarity and construction of classification tree
+***"Classification and Visualization of Twitter Sentiment Data" (Brevik, Selmer): describes a grid searching technique based on machine learning algorithms to perform sentiment analysis of twitter data
+"Robust Sentiment Detection on Twitter from Biased and Noisy Data" (Barbosa, Feng): propose a method to automatically identify sentiments in twitter messages by observing the characteristics of tweets writing.
+**"Sentiment Knowledge Discovery in Twitter Streaming Data" (Bifet, Frank): discuss challenges of Twitter Data Analysis. Suggest effective methods for streaming data handling and classification, deal with unbalanced classes, sliding window Kappa statistic technique to analyze time changing data streams
+
+
+Problem Statement:
+>the opinion of users about a product...[spreads] worldwide within a short span of time
+
+What are we measuring:
+-likes, thumbs-up, in-favor
+-dislikes, thumbs-down, "in-worse"
+
+Specifically, sentiment analysis of iPhone6 on Twitter.
+
+Advantages of Twitter data:
+"1)Tweets are less ambiguous due to short length
+ 2)Tweets are unbiased (see above)
+ 3)Tweets are easily accessible via API"
+
+Author poses two approaches to analyzing Twitter data:
+1) enrich data with some useful information
+2) make predictions using this information
+
+Tools:
+Tweepy, Weka
+
+
+The Purpose:
+collect tweets, classify them into categories based on what they describe (ie., battery, spped, price, etc), classify them as positive or negative.
+
+The GOOD STUFF>>Methodology:
+Data Collection using Tweepy, Twitter API.
+Data Size: more than a million tweets 
+Data Cleaning: remove tweets where language is not equal to "EN"; extract only the text field data from the tweets
+Features (Categories) Classification: 
+Sentiment Classification:
+     Positive words: http://www.winspiration.co.uk/positive.htm 
+     Negative Words: http://eqi.org/fw_neg.htm
+Note: EQI has lists of "feeling" words, possible good resource for future sentiment analysis
+ 
